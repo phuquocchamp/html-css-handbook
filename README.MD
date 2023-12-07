@@ -293,3 +293,50 @@ Dùng để đánh dấu phần nội dung phía dưới của web page, như :
   <p>© 2021 My Site</p>
 </footer>
 ```
+
+
+###### Details and Summary
+
+The **details** and **summary** tags used to mark up a collaptible section of content. The `<summary>` tag is used to mark up the title of section, and the `<details> ` tag is used to mark up the content it self.
+
+```html
+<details>
+    <summary>Click to expand</summary>
+    <p> Content goes here </p>
+</details>
+```
+
+###### Figure and Figcaption
+
+The `<figure>` and `<figcaption>` tags are used to mark up a self-contained piece of content that is referenced from the main content of a web page. The `<figure>` tag is used to mark up the content itself, and the `<figcaption>` tag is used to mark up a caption or description for the content.
+
+```html
+<figure>
+  <imgsrc="image.jpg"alt="Image description" />
+  <figcaption>Image caption</figcaption>
+</figure>
+```
+
+###### Mark
+
+The `<mark>` tag is used to mark up text that has been highlighted for some reason. This might include things like search results, or text that has been highlighted by a user.
+
+```html
+<p>Here is some <mark>highlighted</mark> text.</p>
+```
+
+###### Time
+
+The `<time>` tag is used to mark up a date or time. By using the `<time>` tag, you can make it easier for search engines and other technologies to understand the meaning of the content on your page.
+
+###### Progress
+
+The `<progress>` tag is used to mark up a progress bar. By using the `<progress>` tag, you can make it easier for users to understand the progress of a task.
+
+```html
+<progressvalue="50"max="100"></progress>
+```
+
+###### What about `<div>` and `<span>`?
+
+The `<div>` and `<span>` tags are not semantic tags. They are used to mark up generic content areas, and do not convey any specific meaning. You should only use these tags if you have no other option.
