@@ -81,7 +81,6 @@ Dùng để browser xác định mode để sử dụng (standard mode) để re
 
 là một root element bao gồm 2 thẻ lớn `<head>` và `<body>` . Nếu như ta bỏ qua thì nó sẽ tự ngầm định, nhưng ta buộc phải khai báo nó vì nó định nghĩa ngôn ngữ, ....
 
-
 **Content language**
 
 ```html
@@ -95,3 +94,31 @@ Ngoài ra ta cũng có thể sử dụng attribute "lang" để xác định m�
 ```html
 <span lang="fr-fr">Ceci n'est pas une pipe.</span>
 ```
+
+###### head
+
+Character encoding được khai báo trong thẻ head dùng để cho browser render theo kiểu charset được khai báo .
+
+```html
+<meta charset="utf-8" />
+```
+
+###### Document title
+
+Trang home page hoặc các trang còn lại cần nên có một title duy nhất.
+
+###### Viewport metadata
+
+Thẻ `<meta>` với thuộc tính `viewport` được sử dụng trong HTML để điều chỉnh cách mà trang web được hiển thị trên các thiết bị di động. Điều này đặc biệt quan trọng để làm cho trang web phản ánh đúng trên các màn hình kích thước khác nhau và tránh các vấn đề liên quan đến zoom hoặc cách trang web hiển thị trên các thiết bị di động.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+
+* `width=device-width`: Điều này nói với trình duyệt để thiết lập chiều rộng của trang bằng với chiều rộng của thiết bị di động.
+* `initial-scale=1.0`: Điều này xác định mức độ phóng ban đầu của trang. Giá trị 1.0 đảm bảo rằng trang không được phóng to hoặc thu nhỏ khi tải lần đầu tiên.
+
+##### 3. SEMANTIC HTML
+
+HTML ngữ nghĩa (Semantic HTML) là việc sử dụng các thẻ HTML có ý nghĩa cụ thể và rõ ràng để mô tả nội dung và cấu trúc của trang web. Sử dụng HTML ngữ nghĩa giúp trình duyệt, các công cụ tìm kiếm và các công nghệ hỗ trợ (như đọc màn hình) hiểu rõ hơn về cấu trúc và ý nghĩa của trang, đồng thời cũng giúp làm cho mã nguồn trở nên dễ đọc và hiểu.
