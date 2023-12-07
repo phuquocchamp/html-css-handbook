@@ -115,10 +115,181 @@ Thẻ `<meta>` với thuộc tính `viewport` được sử dụng trong HTML đ
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-
 * `width=device-width`: Điều này nói với trình duyệt để thiết lập chiều rộng của trang bằng với chiều rộng của thiết bị di động.
 * `initial-scale=1.0`: Điều này xác định mức độ phóng ban đầu của trang. Giá trị 1.0 đảm bảo rằng trang không được phóng to hoặc thu nhỏ khi tải lần đầu tiên.
 
 ##### 3. SEMANTIC HTML
 
 HTML ngữ nghĩa (Semantic HTML) là việc sử dụng các thẻ HTML có ý nghĩa cụ thể và rõ ràng để mô tả nội dung và cấu trúc của trang web. Sử dụng HTML ngữ nghĩa giúp trình duyệt, các công cụ tìm kiếm và các công nghệ hỗ trợ (như đọc màn hình) hiểu rõ hơn về cấu trúc và ý nghĩa của trang, đồng thời cũng giúp làm cho mã nguồn trở nên dễ đọc và hiểu.
+
+###### Header
+
+Header tag dùng để đánh dấu phần đầu của trang web, thường bao gồm:
+
+- main title
+- logo
+- navigation links
+- elements xuất hiện nhiều trên các trang trong trang web của bạn (phần nav bar)
+
+```html
+<!-- Non-semantic header -->
+<div class="header">
+  <h1>My Site</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</div>
+
+<!-- Semantic header -->
+<header>
+  <h1>My Site</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+```
+
+###### Navigation
+
+`<nav>` tag dùng để đánh dấu section của trang web chứa navigation links. Điều này sẽ giúp cho người sử dụng và search engines nhận biết rằng phần này được dùng cho việc điều hướng.
+
+```html
+<!-- Non-semantic navigation -->
+<divclass="navigation">
+  <ahref="#">Home</a>
+  <ahref="#">About</a>
+  <ahref="#">Contact</a>
+</div>
+
+<!-- Semantic navigation -->
+<nav>
+  <ul>
+    <li><ahref="#">Home</a></li>
+    <li><ahref="#">About</a></li>
+    <li><ahref="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+###### Main
+
+Thẻ `<main> `  dùng để đánh dấu phần nội dung chính của trang web. Điều này giúp cho user và search engines xác định phần nội dung chính của trang web
+
+```html
+<!-- Non-semantic main content -->
+<divclass="main-content">
+  <h2>About Us</h2>
+  <p>Welcome to our website. We are a company that specializes in widgets.</p>
+</div>
+
+<!-- Semantic main content -->
+<main>
+  <h2>About Us</h2>
+  <p>Welcome to our website. We are a company that specializes in widgets.</p>
+</main>
+```
+
+###### Article
+
+Thẻ `<article>` dùng để đại diện cho phần nội dung độc lập, chẳng hặn như :
+
+- blog post.
+- news article
+- product review
+
+Nội dung trong thẻ `<article>` phải có ý nghĩa và có thể bao gồm các thẻ khác như :
+
+- heading
+- paragraph
+- image
+- other type of content.
+
+```html
+<!-- Non-semantic article -->
+<divclass="article">
+  <h2>How to Make a Widget</h2>
+  <p>Widgets are great. Here's how to make one.</p>
+</div>
+
+<!-- Semantic article -->
+<article>
+  <h2>How to Make a Widget</h2>
+  <p>Widgets are great. Here's how to make one.</p>
+</article>
+```
+
+###### Aside
+
+Thẻ `<aside>` được sử dụng để đánh dấu một phần của trang chứa thông tin không phải là nội dung chính của trang, thường là:
+
+- thông tin bổ sung
+- liên quan
+- quảng cáo.
+
+Thẻ `<aside>` có thể chứa các thành phần như:
+
+- biểu đồ
+- quảng cáo
+- liên kết có liên quan
+- hoặc bất kỳ nội dung phụ khác.
+
+```html
+<div>
+  <article>
+    <h2>Article Title</h2>
+    <p>Article content goes here</p>
+  </article>
+  <aside>
+    <h3>Related Articles</h3>
+    <ul>
+      <li><ahref="#">Article 1</a></li>
+      <li><ahref="#">Article 2</a></li>
+      <li><ahref="#">Article 3</a></li>
+    </ul>
+  </aside>
+</div>
+```
+
+
+###### Section
+
+Thẻ `<section>` dùng để đánh dấu các phần của trang web được nhóm theo chủ đề với nhau. Thẻ này thường bao gồm những nội dung như :
+
+- Chương
+- Phần
+
+của một bài viết dài, hoặc các phần khác nhau của trang.
+
+```html
+<section>
+  <h2>Section Title</h2>
+  <p>Section content goes here</p>
+</section>
+```
+
+
+###### Footer
+
+Dùng để đánh dấu phần nội dung phía dưới của web page, như : 
+
+- copyright infomation.
+- contact details
+- links to social media profiles.
+
+```html
+<!-- Non-semantic footer -->
+<divclass="footer">
+  <p>© 2021 My Site</p>
+</div>
+
+<!-- Semantic footer -->
+<footer>
+  <p>© 2021 My Site</p>
+</footer>
+```
